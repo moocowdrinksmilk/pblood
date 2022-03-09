@@ -1,6 +1,18 @@
 @tailwind base;
 @tailwind components;
 
+.center {
+  @apply top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 absolute
+}
+
+.column {
+  @apply flex flex-col
+}
+
+.row {
+  @apply flex flex-row
+}
+
 @font-face {
   font-family: 'Catatan Perjalanan';
   src: local('Catatan Perjalanan'), url('./Catatan\ Perjalanan.otf')
