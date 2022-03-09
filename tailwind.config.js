@@ -240,6 +240,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Catatan Perjalanan',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',

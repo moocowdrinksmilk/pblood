@@ -1,8 +1,14 @@
 @tailwind base;
 @tailwind components;
+
+@font-face {
+  font-family: 'Catatan Perjalanan';
+  src: local('Catatan Perjalanan'), url('./Catatan\ Perjalanan.otf')
+}
 @tailwind utilities;
 
 @import '~antd/dist/antd.css';
+
 
 html,
 body {
