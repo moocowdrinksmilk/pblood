@@ -17,25 +17,25 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex flex-row gap-8 text-xl">
-                    <Link href="">
+                    <Link href="#AboutUs">
                         <a>
                             About us
                         </a>
                     </Link>
 
-                    <Link href="">
+                    <Link href="#OurPeople">
                         <a>
                             Our people
                         </a>
                     </Link>
 
-                    <Link href="">
+                    <Link href="#Events">
                         <a>
                             Events
                         </a>
                     </Link>
 
-                    <Link href="">
+                    <Link href="#ContactUs">
                         <a>
                             Contact us
                         </a>
