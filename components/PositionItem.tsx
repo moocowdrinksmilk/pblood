@@ -1,7 +1,14 @@
 import {Modal} from 'antd'
 import { useState } from 'react'
 
-const PositionItem = () => {
+interface props {
+    image: string
+    description: string
+    position: string
+    name: string
+}
+
+const PositionItem = (props: props) => {
 
     const [modal, setModal] = useState(false)
     return (
@@ -15,11 +22,11 @@ const PositionItem = () => {
 
                 <div>
                     {
-                        "Insert longer description here"
+                        "Currently serving the National Service"
                     }
                 </div>
             </Modal>
-            <div className="text-base cursor-pointer" onClick={() => setModal(true)}>
+            <div className="text-base cursor-pointer column items-center" onClick={() => setModal(true)}>
                 <div>
                     {
                         "<Insert Image here>"
@@ -28,7 +35,13 @@ const PositionItem = () => {
 
                 <div>
                     {
-                        "Insert position here"
+                        props.name
+                    }
+                </div>
+
+                <div className="text-gray-500">
+                    {
+                        props.position
                     }
                 </div>
             </div>

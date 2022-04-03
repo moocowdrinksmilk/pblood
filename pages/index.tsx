@@ -9,31 +9,31 @@ import { Carousel } from 'antd';
 const Home: NextPage = () => {
     return (
         <div>
-            <div className="h-screen">
-                <div className="h-4/6 bg-red-300 relative">
+            <div className="">
+                <div className="h-5/6screen bg-red-300 relative">
                     <Navbar />
 
                     <div className="column gap-2 center items-center">
                         <div className="text-6xl">
                             {
-                                "<Insert Text here>"
+                                "Project Blood SG"
                             }
                         </div>
 
-                        <div className="text-base">
+                        <div className="w-full text-base text-center text-white">
                             {
-                                "<Insert Text here>"
+                                "Project Blood SG is a student-led initiative aimed to raise awareness on blood donations in youths. We go beyond to give youths a platform to volunteer and organise blood drives biannually."
                             }
                         </div>
                     </div>
                 </div>
 
-                <div className="h-2/6 column items-center pt-6">
+                <div className="column items-center pt-6">
                     <h1 className="text-3xl">
                         Our Sponsors
                     </h1>
 
-                    <div className="flex flex-wrap gap-6 mt-4">
+                    <div className="flex lg:justify-center overflow-y-auto gap-6 mt-4 w-screen">
                         <div className="text-base">
                             {
                                 "<Insert Sponsor Image here>"
@@ -73,19 +73,33 @@ const Home: NextPage = () => {
                 </div>
             </div>
 
-            <div className="pb-20" id="OurPeople">
+            <div className="column items-center gap-10 pb-20" id="OurPeople">
                 <div className="row justify-center text-4xl">
                     Who are we?
                 </div>
 
-                <div className="flex flex-wrap justify-center gap-6 mt-4">
-                    <PositionItem />
+                <div className="column w-full items-center gap-6">
+                    <h3 className="text-3xl">
+                        Our Directors
+                    </h3>
+                    <div className="row justify-center gap-10">
+                        <PositionItem position={"Director"} name={"Marie Tan"} />
+                        <PositionItem position={"Director"} name={"Bo Yi"} />
+                    </div>
+                </div>
 
-                    <PositionItem />
-
-                    <PositionItem />
-
-                    <PositionItem />
+                <div className="column w-full items-center gap-6">
+                    <h3 className="text-3xl">
+                        Team Leads
+                    </h3>
+                    <div className="row justify-center flex-wrap gap-10">
+                        <PositionItem position={"Tech Lead"} name={"Jensen"} />
+                        <PositionItem position={"Tech Lead"} name={"Jensen"} />
+                        <PositionItem position={"Tech Lead"} name={"Jensen"} />
+                        <PositionItem position={"Tech Lead"} name={"Jensen"} />
+                        <PositionItem position={"Tech Lead"} name={"Jensen"} />
+                        <PositionItem position={"Tech Lead"} name={"Jensen"} />
+                    </div>
                 </div>
             </div>
 
