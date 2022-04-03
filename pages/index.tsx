@@ -53,8 +53,8 @@ const Home: NextPage = () => {
                         Our Directors
                     </h3>
                     <div className="row justify-center gap-10">
-                        <PositionItem position={"Director"} name={"Marie Tan"} />
-                        <PositionItem position={"Director"} name={"Bo Yi"} />
+                        <PositionItem position={"Director"} name={"Marie Tan"} image={""} description={""} />
+                        <PositionItem position={"Director"} name={"Bo Yi"} image={""} description={""} />
                     </div>
                 </div>
 
@@ -63,12 +63,12 @@ const Home: NextPage = () => {
                         Team Leads
                     </h3>
                     <div className="row justify-center flex-wrap gap-10">
-                        <PositionItem position={"Tech Lead"} name={"Jensen"} />
-                        <PositionItem position={"Tech Lead"} name={"Jensen"} />
-                        <PositionItem position={"Tech Lead"} name={"Jensen"} />
-                        <PositionItem position={"Tech Lead"} name={"Jensen"} />
-                        <PositionItem position={"Tech Lead"} name={"Jensen"} />
-                        <PositionItem position={"Tech Lead"} name={"Jensen"} />
+                        <PositionItem position={"Tech Lead"} name={"Jensen"} image={""} description={""} />
+                        <PositionItem position={"Tech Lead"} name={"Jensen"} image={""} description={""} />
+                        <PositionItem position={"Tech Lead"} name={"Jensen"} image={""} description={""}/>
+                        <PositionItem position={"Tech Lead"} name={"Jensen"} image={""} description={""} />
+                        <PositionItem position={"Tech Lead"} name={"Jensen"} image={""} description={""} />
+                        <PositionItem position={"Tech Lead"} name={"Jensen"} image={""} description={""} />
                     </div>
                 </div>
             </div>
