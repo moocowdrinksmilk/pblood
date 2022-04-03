@@ -5,15 +5,16 @@ import Link from 'next/link'
 import Navbar from '../components/Navbar'
 import PositionItem from '../components/PositionItem'
 import { Carousel, Progress, Statistic } from 'antd';
+import InstagramEmbed from 'react-instagram-embed';
 
 const Home: NextPage = () => {
     return (
         <div>
             <div className="">
-                <div className="h-5/6screen bg-red-300 relative">
+                <div className="h-screen bg-red-300 relative mb-20">
                     <Navbar />
 
-                    <div className="column gap-2 center items-center">
+                    <div className="column gap-2 center items-center text-center">
                         <div className="text-6xl">
                             {
                                 "Project Blood SG"
@@ -27,38 +28,6 @@ const Home: NextPage = () => {
                         </div>
                     </div>
                 </div>
-
-                <div className="column items-center pt-6">
-                    <h1 className="text-3xl">
-                        Our Sponsors
-                    </h1>
-
-                    <div className="flex lg:justify-center overflow-y-auto gap-6 mt-4 w-screen">
-                        <div className="text-base">
-                            {
-                                "<Insert Sponsor Image here>"
-                            }
-                        </div>
-
-                        <div className="text-base">
-                            {
-                                "<Insert Sponsor Image here>"
-                            }
-                        </div>
-
-                        <div className="text-base">
-                            {
-                                "<Insert Sponsor Image here>"
-                            }
-                        </div>
-
-                        <div className="text-base">
-                            {
-                                "<Insert Sponsor Image here>"
-                            }
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <div className="pb-44" id="AboutUs">
@@ -66,14 +35,15 @@ const Home: NextPage = () => {
                     So, what do we do?
                 </div>
 
-                <div className="row justify-center">
-                    <div className="flex h-36 w-80 bg-red-300 row justify-center items-center">
-                        Have some introductory video here
-                    </div>
+                <div className="row justify-center lg:px-44 px-10">
+                    <video autoPlay muted controls>
+                        <source src="/pblood.mp4" type="video/mp4" />
+                    </video>
+
                 </div>
             </div>
 
-            <div className="column items-center gap-10 pb-20" id="OurPeople">
+            <div className="column items-center gap-10 pb-44" id="OurPeople">
                 <div className="row justify-center text-4xl">
                     Who are we?
                 </div>
@@ -103,44 +73,74 @@ const Home: NextPage = () => {
                 </div>
             </div>
 
-            <div className="column gap-10 py-44 px-20">
+            <div className="column gap-10 pb-44 md:px-20 px-10">
                 <div className="row justify-center text-4xl">
                     Statistics
                 </div>
 
-                <div className="row justify-around items-center flex-wrap gap-10 mt-10">
-                        <Statistic title="Blood Donation Drives" value={4} valueStyle={{
-                            fontSize: '50px'
-                        }} />
-                        <Statistic title="Attendees" value={486} valueStyle={{
-                            fontSize: '50px'
-                        }} />
-                        <Statistic title="Successful Donors" value={357} valueStyle={{
-                            fontSize: '50px'
-                        }} />
-                        <Statistic title="First Timers" value={141} valueStyle={{
-                            fontSize: '50px'
-                        }} />
+                <div className="row justify-around items-start flex-wrap gap-10 mt-10 mb-10">
+                    <Statistic title="Blood Donation Drives" value={4} valueStyle={{
+                        fontSize: '50px'
+                    }} />
+                    <Statistic title="Attendees" value={486} valueStyle={{
+                        fontSize: '50px'
+                    }} />
+                    <Statistic title="Successful Donors" value={357} valueStyle={{
+                        fontSize: '50px'
+                    }} />
+                    <Statistic title="First Timers" value={141} valueStyle={{
+                        fontSize: '50px'
+                    }} />
                 </div>
 
-                <div className="column items-center">
+                <div className="column justify-center items-center gap-10">
+                    <div className="text-2xl text-center">
+                        We are proud to say that <span className="text-5xl text-red-500">40%</span> of our donors are donating for their first time!
+                    </div>
                     <div className="relative">
-                        <Progress showInfo={false} width={300} percent={99.9} success={{ percent: 40 }}  type="dashboard" status="active" />
+                        <Progress showInfo={false} width={300} percent={99.9} success={{ percent: 40 }} type="dashboard" status="active" />
                         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl text-center">
                             40% first time doners
                         </div>
                     </div>
 
+
                 </div>
             </div>
 
-            <div className="py-44 px-20" id="Events">
-                <div className="row justify-center text-4xl">
+            <div className="pb-44 md:px-20 px-10" id="Events">
+                <div className="row justify-center text-4xl pb-10 text-center">
                     Events we have done
                 </div>
 
                 <Carousel autoplay>
                     <div>
+                        <div className="relative row justify-center items-center h-80 w-full">
+                            <Image layout='fill' objectFit='contain' src="/events/dukenus.jpeg" alt="wefwe"/>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="relative row justify-center items-center h-80 w-full">
+                            <Image layout='fill' objectFit='contain' src="/events/lkcmed.jpeg" alt="wefwe"/>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="relative row justify-center items-center h-80 w-full">
+                            <Image layout='fill' objectFit='contain' src="/events/yllsom.jpeg" alt="wefwe"/>
+                        </div>
+                    </div>
+                    {/* <div>
+                        <div className="relative row justify-center items-center bg-red-100 h-80">
+                            <Image layout="fill" src="/events/dukenus.jpeg" alt="wefwe"/>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="relative row justify-center items-center bg-red-100 h-80 w-80">
+                            <Image layout="fill" src="/events/dukenus.jpeg" alt="wefwe"/>
+                        </div>
+                    </div> */}
+
+                    {/* <div>
                         <div className="row justify-center items-center h-80 bg-red-100">
                             <div className="text-4xl">
                                 {
@@ -158,17 +158,7 @@ const Home: NextPage = () => {
                                 }
                             </div>
                         </div>
-                    </div>
-
-                    <div>
-                        <div className="row justify-center items-center h-80 bg-red-100">
-                            <div className="text-4xl">
-                                {
-                                    "Insert images of past events here"
-                                }
-                            </div>
-                        </div>
-                    </div>
+                    </div> */}
                 </Carousel>
             </div>
 

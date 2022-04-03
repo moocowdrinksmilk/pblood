@@ -44,6 +44,11 @@ const PositionItem = (props: props) => {
                         props.position
                     }
                 </div>
+                <div className="text-gray-500">
+                    {
+                        "NUS Medicine"
+                    }
+                </div>
             </div>
         </>
     )
