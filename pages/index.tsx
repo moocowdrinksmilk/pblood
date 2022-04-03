@@ -4,7 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import Navbar from '../components/Navbar'
 import PositionItem from '../components/PositionItem'
-import { Carousel } from 'antd';
+import { Carousel, Progress, Statistic } from 'antd';
 
 const Home: NextPage = () => {
     return (
@@ -100,6 +100,37 @@ const Home: NextPage = () => {
                         <PositionItem position={"Tech Lead"} name={"Jensen"} />
                         <PositionItem position={"Tech Lead"} name={"Jensen"} />
                     </div>
+                </div>
+            </div>
+
+            <div className="column gap-10 py-44 px-20">
+                <div className="row justify-center text-4xl">
+                    Statistics
+                </div>
+
+                <div className="row justify-around items-center flex-wrap gap-10 mt-10">
+                        <Statistic title="Blood Donation Drives" value={4} valueStyle={{
+                            fontSize: '50px'
+                        }} />
+                        <Statistic title="Attendees" value={486} valueStyle={{
+                            fontSize: '50px'
+                        }} />
+                        <Statistic title="Successful Donors" value={357} valueStyle={{
+                            fontSize: '50px'
+                        }} />
+                        <Statistic title="First Timers" value={141} valueStyle={{
+                            fontSize: '50px'
+                        }} />
+                </div>
+
+                <div className="column items-center">
+                    <div className="relative">
+                        <Progress showInfo={false} width={300} percent={99.9} success={{ percent: 40 }}  type="dashboard" status="active" />
+                        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl text-center">
+                            40% first time doners
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
