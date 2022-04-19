@@ -5,13 +5,14 @@ import Link from 'next/link'
 import Navbar from '../components/Navbar'
 import PositionItem from '../components/PositionItem'
 import { Carousel, Progress, Statistic } from 'antd';
+import { InstagramOutlined, YoutubeOutlined, LinkedinOutlined, FacebookOutlined } from '@ant-design/icons'
 import InstagramEmbed from 'react-instagram-embed';
 
 const Home: NextPage = () => {
     return (
         <div>
             <div className="">
-                <div className="h-screen bg-red-300 relative mb-20">
+                <div className="h-screen bg-red-400 relative mb-20">
                     <Navbar />
 
                     <div className="column gap-2 center items-center text-center">
@@ -21,7 +22,7 @@ const Home: NextPage = () => {
                             }
                         </div>
 
-                        <div className="w-full text-base text-center text-white">
+                        <div className="w-full text-base text-center">
                             {
                                 "Project Blood SG is a student-led initiative aimed to raise awareness on blood donations in youths. We go beyond to give youths a platform to volunteer and organise blood drives biannually."
                             }
@@ -53,8 +54,8 @@ const Home: NextPage = () => {
                         Our Directors
                     </h3>
                     <div className="row justify-center gap-10">
-                        <PositionItem position={"Director"} name={"Marie Tan"} image={""} description={""} />
-                        <PositionItem position={"Director"} name={"Bo Yi"} image={""} description={""} />
+                        <PositionItem position={"Director"} name={"Marie Tan"} image={"/people/marie-smu-cs.jpg"} description={""} />
+                        <PositionItem position={"Director"} name={"Bo Yi"} image={"/people/boyi-director.jpg"} description={""} />
                     </div>
                 </div>
 
@@ -63,12 +64,10 @@ const Home: NextPage = () => {
                         Team Leads
                     </h3>
                     <div className="row justify-center flex-wrap gap-10">
-                        <PositionItem position={"Tech Lead"} name={"Jensen"} image={""} description={""} />
-                        <PositionItem position={"Tech Lead"} name={"Jensen"} image={""} description={""} />
-                        <PositionItem position={"Tech Lead"} name={"Jensen"} image={""} description={""}/>
-                        <PositionItem position={"Tech Lead"} name={"Jensen"} image={""} description={""} />
-                        <PositionItem position={"Tech Lead"} name={"Jensen"} image={""} description={""} />
-                        <PositionItem position={"Tech Lead"} name={"Jensen"} image={""} description={""} />
+                        <PositionItem position={"Tech Lead"} name={"Jensen"} image={"/people/jensen-tech.jpg"} description={""} />
+                        <PositionItem position={"Publicity Lead"} name={"Braden"} image={"/people/braden-pubs.jpg"} description={""} />
+                        <PositionItem position={"Events Lead"} name={"Mat"} image={"/people/matz-events.jpg"} description={""}/>
+                        <PositionItem position={"Phillip Lead"} name={"Phillip"} image={"/people/phillip-creative.jpg"} description={""} />
                     </div>
                 </div>
             </div>
@@ -163,43 +162,35 @@ const Home: NextPage = () => {
             </div>
 
             <div className="column gap-8 pb-44" id="ContactUs">
-                <div className="column items-center justify-center text-4xl">
+                {/* <div className="column items-center justify-center text-4xl">
                     <div>Contact us!</div>
                     <div className="text-2xl">
                         {
                             "<Contact information here>"
                         }
                     </div>
-                </div>
+                </div> */}
 
                 <div className="column gap-4 items-center justify-center">
                     <div className="row justify-center text-4xl">
                         Follow us on our socials
                     </div>
 
-                    <div className="row gap-4 text-2xl">
+                    <div className="row gap-4 text-2xl items-center">
+                        <Link href="/instagram">
+                            <InstagramOutlined />
+                        </Link>
+
                         <div>
-                            {
-                                "<Insert socials icons here>"
-                            }
+                            <YoutubeOutlined />
                         </div>
 
                         <div>
-                            {
-                                "<Insert socials icons here>"
-                            }
+                            <LinkedinOutlined />
                         </div>
 
                         <div>
-                            {
-                                "<Insert socials icons here>"
-                            }
-                        </div>
-
-                        <div>
-                            {
-                                "<Insert socials icons here>"
-                            }
+                            <FacebookOutlined />
                         </div>
                     </div>
                 </div>

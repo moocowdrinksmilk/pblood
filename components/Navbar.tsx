@@ -90,7 +90,7 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className="bg-red-400 cursor-pointer hover:bg-red-500 text-lg px-4 py-2 rounded-md text-white md:block hidden">
+                <div className="bg-red-500 cursor-pointer hover:bg-red-600 text-lg px-4 py-2 rounded-md text-white md:block hidden">
                     Telegram Bot
                 </div>
 

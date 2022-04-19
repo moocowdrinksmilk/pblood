@@ -1,5 +1,6 @@
 import {Modal} from 'antd'
 import { useState } from 'react'
+import Image from 'next/image'
 
 interface props {
     image: string
@@ -13,7 +14,7 @@ const PositionItem = (props: props) => {
     const [modal, setModal] = useState(false)
     return (
         <>
-            <Modal visible={modal} footer={null} onCancel={() => {setModal(false)}}>
+            {/* <Modal visible={modal} footer={null} onCancel={() => {setModal(false)}}>
                 <div>
                     {
                         "Insert Image here"
@@ -25,12 +26,10 @@ const PositionItem = (props: props) => {
                         "Currently serving the National Service"
                     }
                 </div>
-            </Modal>
-            <div className="text-base cursor-pointer column items-center" onClick={() => setModal(true)}>
-                <div>
-                    {
-                        "<Insert Image here>"
-                    }
+            </Modal> */}
+            <div className="text-base cursor-pointer column items-center relative" onClick={() => setModal(true)}>
+                <div className="">
+                    <Image className="rounded-full" objectFit={"cover"} width={180} height={180} src={props.image} alt="wefwe"/>
                 </div>
 
                 <div>
