@@ -45,7 +45,7 @@ const PositionItem = (props: props) => {
                 </div>
                 <div className="text-gray-500">
                     {
-                        "NUS Medicine"
+                        props.description
                     }
                 </div>
             </div>

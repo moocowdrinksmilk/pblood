@@ -54,8 +54,8 @@ const Home: NextPage = () => {
                         Our Directors
                     </h3>
                     <div className="row justify-center gap-10">
-                        <PositionItem position={"Director"} name={"Marie Tan"} image={"/people/marie-smu-cs.jpg"} description={""} />
-                        <PositionItem position={"Director"} name={"Bo Yi"} image={"/people/boyi-director.jpg"} description={""} />
+                        <PositionItem position={"Director"} name={"Marie Tan"} image={"/people/marie-smu-cs.jpg"} description={"NUS Medicine"} />
+                        <PositionItem position={"Director"} name={"Bo Yi"} image={"/people/boyi-director.jpg"} description={"NUS Business"} />
                     </div>
                 </div>
 
@@ -64,10 +64,10 @@ const Home: NextPage = () => {
                         Team Leads
                     </h3>
                     <div className="row justify-center flex-wrap gap-10">
-                        <PositionItem position={"Tech Lead"} name={"Jensen"} image={"/people/jensen-tech.jpg"} description={""} />
-                        <PositionItem position={"Publicity Lead"} name={"Braden"} image={"/people/braden-pubs.jpg"} description={""} />
-                        <PositionItem position={"Events Lead"} name={"Mat"} image={"/people/matz-events.jpg"} description={""}/>
-                        <PositionItem position={"Phillip Lead"} name={"Phillip"} image={"/people/phillip-creative.jpg"} description={""} />
+                        <PositionItem position={"Tech Lead"} name={"Jensen"} image={"/people/jensen-tech.jpg"} description={"National Service Full-time"} />
+                        <PositionItem position={"Publicity Lead"} name={"Braden"} image={"/people/braden-pubs.jpg"} description={"NUS Hamanities and Sciences"} />
+                        <PositionItem position={"Events Lead"} name={"Matz"} image={"/people/matz-events.jpg"} description={"National Service Full-time"}/>
+                        <PositionItem position={"Creative Lead"} name={"Phillip"} image={"/people/phillip-creative.jpg"} description={"NUS YST Conservatory of Music"} />
                     </div>
                 </div>
             </div>
@@ -79,16 +79,20 @@ const Home: NextPage = () => {
 
                 <div className="row justify-around items-start flex-wrap gap-10 mt-10 mb-10">
                     <Statistic title="Blood Donation Drives" value={4} valueStyle={{
-                        fontSize: '50px'
+                        fontSize: '50px',
+                        fontFamily: 'inherit'
                     }} />
                     <Statistic title="Attendees" value={486} valueStyle={{
-                        fontSize: '50px'
+                        fontSize: '50px',
+                        fontFamily: 'inherit'
                     }} />
                     <Statistic title="Successful Donors" value={357} valueStyle={{
-                        fontSize: '50px'
+                        fontSize: '50px',
+                        fontFamily: 'inherit'
                     }} />
                     <Statistic title="First Timers" value={141} valueStyle={{
-                        fontSize: '50px'
+                        fontSize: '50px',
+                        fontFamily: 'inherit'
                     }} />
                 </div>
 
@@ -99,7 +103,7 @@ const Home: NextPage = () => {
                     <div className="relative">
                         <Progress showInfo={false} width={300} percent={99.9} success={{ percent: 40 }} type="dashboard" status="active" />
                         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl text-center">
-                            40% first time doners
+                            40% first time donors
                         </div>
                     </div>
 
@@ -128,36 +132,6 @@ const Home: NextPage = () => {
                             <Image layout='fill' objectFit='contain' src="/events/yllsom.jpeg" alt="wefwe"/>
                         </div>
                     </div>
-                    {/* <div>
-                        <div className="relative row justify-center items-center bg-red-100 h-80">
-                            <Image layout="fill" src="/events/dukenus.jpeg" alt="wefwe"/>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="relative row justify-center items-center bg-red-100 h-80 w-80">
-                            <Image layout="fill" src="/events/dukenus.jpeg" alt="wefwe"/>
-                        </div>
-                    </div> */}
-
-                    {/* <div>
-                        <div className="row justify-center items-center h-80 bg-red-100">
-                            <div className="text-4xl">
-                                {
-                                    "Insert images of past events here"
-                                }
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div className="row justify-center items-center h-80 bg-red-100">
-                            <div className="text-4xl">
-                                {
-                                    "Insert images of past events here"
-                                }
-                            </div>
-                        </div>
-                    </div> */}
                 </Carousel>
             </div>
 

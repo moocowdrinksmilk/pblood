@@ -90,9 +90,9 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className="bg-red-500 cursor-pointer hover:bg-red-600 text-lg px-4 py-2 rounded-md text-white md:block hidden">
+                <a className="bg-red-500 cursor-pointer hover:bg-red-600 text-lg px-4 py-2 rounded-md text-white md:block hidden" target="_blank" href="https://t.me/projectbloodsgbot" rel="noopener noreferrer">
                     Telegram Bot
-                </div>
+                </a>
 
                 <div className="md:hidden" onClick={() => {
                     setDrawer(true)
