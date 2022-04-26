@@ -69,7 +69,7 @@ const Home: NextPage = () => {
                     </h3>
                     <div className="row justify-center flex-wrap gap-10">
                         <PositionItem position={"Tech Lead"} name={"Jensen"} image={"/people/jensen-tech.jpg"} description={"National Service Full-time"} />
-                        <PositionItem position={"Publicity Lead"} name={"Braden"} image={"/people/braden-pubs.jpg"} description={"NUS Hamanities and Sciences"} />
+                        <PositionItem position={"Publicity Lead"} name={"Braden"} image={"/people/braden-pubs.jpg"} description={"NUS Humanities and Sciences"} />
                         <PositionItem position={"Events Lead"} name={"Matz"} image={"/people/matz-events.jpg"} description={"National Service Full-time"}/>
                         <PositionItem position={"Creative Lead"} name={"Phillip"} image={"/people/phillip-creative.jpg"} description={"NUS YST Conservatory of Music"} />
                     </div>
