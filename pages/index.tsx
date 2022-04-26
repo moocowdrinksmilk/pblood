@@ -15,7 +15,7 @@ const Home: NextPage = () => {
                 <div className="h-screen bg-red-400 relative mb-20">
                     <Navbar />
 
-                    <div className="column gap-2 center items-center text-center">
+                    <div className="column gap-2 center items-center text-center pt-44">
                         <div className="text-6xl">
                             {
                                 "Project Blood SG"
@@ -27,13 +27,17 @@ const Home: NextPage = () => {
                                 "Project Blood SG is a student-led initiative aimed to raise awareness on blood donations in youths. We go beyond to give youths a platform to volunteer and organise blood drives biannually."
                             }
                         </div>
+
+                        <a href="https://forms.gle/Je1XQQKYanr59NT6A"  target="_blank" rel="noopener noreferrer" className="mt-44 px-4 py-2 bg-white rounded-md text-xl text-black hover:text-black hover:bg-red-200">
+                            Sign up here!
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div className="pb-44" id="AboutUs">
                 <div className="row justify-center text-4xl">
-                    So, what do we do?
+                    What do we do?
                 </div>
 
                 <div className="row justify-center lg:px-44 px-10">
