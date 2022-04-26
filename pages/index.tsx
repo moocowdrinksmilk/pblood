@@ -42,7 +42,7 @@ const Home: NextPage = () => {
 
                 <div className="row justify-center lg:px-44 px-10">
                     <video autoPlay muted controls>
-                        <source src="/pblood.mp4" type="video/mp4" />
+                        <source src="/compressed-pblood.mp4" type="video/mp4" />
                     </video>
 
                 </div>
