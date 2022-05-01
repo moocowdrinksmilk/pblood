@@ -28,9 +28,15 @@ const Home: NextPage = () => {
                             }
                         </div>
 
-                        <a href="https://forms.gle/Je1XQQKYanr59NT6A"  target="_blank" rel="noopener noreferrer" className="mt-44 px-4 py-2 bg-white rounded-md text-xl text-black hover:text-black hover:bg-red-200">
-                            Sign up here!
-                        </a>
+                        <div className="column mt-44 gap-2 items-center">
+                            <div className="text-lg">
+                                Join us on 4th June 2020 @Cheng San Community Club
+                            </div>
+
+                            <a href="https://forms.gle/Je1XQQKYanr59NT6A"  target="_blank" rel="noopener noreferrer" className="w-1/2 px-4 py-2 bg-white rounded-md text-xl text-black hover:text-black hover:bg-red-200">
+                                Sign up here!
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,17 +129,27 @@ const Home: NextPage = () => {
                 <Carousel autoplay>
                     <div>
                         <div className="relative row justify-center items-center h-80 w-full">
-                            <Image layout='fill' objectFit='contain' src="/events/dukenus.jpeg" alt="wefwe"/>
+                            <Image layout='fill' objectFit='contain' src="/events/dukenus.jpeg" alt="Blood donation drive image"/>
                         </div>
                     </div>
                     <div>
                         <div className="relative row justify-center items-center h-80 w-full">
-                            <Image layout='fill' objectFit='contain' src="/events/lkcmed.jpeg" alt="wefwe"/>
+                            <Image layout='fill' objectFit='contain' src="/events/lkcmed.jpeg" alt="Blood donation drive image"/>
                         </div>
                     </div>
                     <div>
                         <div className="relative row justify-center items-center h-80 w-full">
-                            <Image layout='fill' objectFit='contain' src="/events/yllsom.jpeg" alt="wefwe"/>
+                            <Image layout='fill' objectFit='contain' src="/events/yllsom.jpeg" alt="Blood donation drive image"/>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="relative row justify-center items-center h-80 w-full">
+                            <Image layout='fill' objectFit='contain' src="/events/marymount.jpeg" alt="Blood donation drive image"/>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="relative row justify-center items-center h-80 w-full">
+                            <Image layout='fill' objectFit='contain' src="/events/marymount-stats.jpeg" alt="Blood donation drive image"/>
                         </div>
                     </div>
                 </Carousel>
